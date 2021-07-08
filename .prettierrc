@@ -1,0 +1,17 @@
+{
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "es5",
+    "useTabs": false,
+    "overrides": [
+        {
+            "files": [
+                "scss/wordpress/_blocks.scss",
+                "scss/editor/_elements.scss"
+            ],
+            "options": {
+                "printWidth": 200
+            }
+        }
+    ]
+}

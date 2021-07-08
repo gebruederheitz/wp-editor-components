@@ -1,0 +1,37 @@
+{
+  "name": "@gebruederheitz/wp-editor-components",
+  "version": "1.0.0",
+  "description": "Some opinionated components to make Gutenberg block development easier.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint components/ utils/ icons/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gebruederheitz/wp-editor-components.git"
+  },
+  "keywords": [
+    "Wordpress",
+    "Gutenberg"
+  ],
+  "author": "Andreas Maros <andreas.maros@gebruederheitz.de>",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/gebruederheitz/wp-editor-components/issues"
+  },
+  "homepage": "https://github.com/gebruederheitz/wp-editor-components#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "classnames": "^2.3.1",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "prettier": "^2.3.2"
+  }
+}
