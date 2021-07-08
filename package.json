@@ -20,6 +20,7 @@
   "bugs": {
     "url": "https://github.com/gebruederheitz/wp-editor-components/issues"
   },
+  "private": false,
   "homepage": "https://github.com/gebruederheitz/wp-editor-components#readme",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
