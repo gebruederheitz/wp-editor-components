@@ -1,6 +1,6 @@
 {
   "name": "@gebruederheitz/wp-editor-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Some opinionated components to make Gutenberg block development easier.",
   "main": "index.mjs",
   "module": "dist/index.mjs",
@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint components/ utils/ icons/",
     "build": "rollup -c ./.rollup.config.js",
-    "prepare": "build"
+    "prepare": "npm run build",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
