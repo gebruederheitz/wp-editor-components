@@ -2,10 +2,13 @@
   "name": "@gebruederheitz/wp-editor-components",
   "version": "1.0.0",
   "description": "Some opinionated components to make Gutenberg block development easier.",
-  "main": "index.js",
+  "main": "index.mjs",
+  "module": "dist/index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint components/ utils/ icons/"
+    "lint": "eslint components/ utils/ icons/",
+    "build": "rollup -c ./.rollup.config.js",
+    "prepare": "build"
   },
   "repository": {
     "type": "git",
@@ -29,10 +32,16 @@
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "rollup": "^2.53.1"
   }
 }
