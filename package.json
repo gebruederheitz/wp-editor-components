@@ -16,6 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/gebruederheitz/wp-editor-components.git"
   },
+  "engines": {
+    "node": ">=15"
+  },
   "keywords": [
     "Wordpress",
     "Gutenberg"
