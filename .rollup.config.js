@@ -8,9 +8,9 @@ export default {
     output: {
         // file: 'dist/index.mjs',
         dir: 'dist/',
-        preserveModules: true,
+        // preserveModules: true,
         format: 'esm',
-        sourcemap: true,
+        // sourcemap: true,
         globals: {
             wp: 'wp',
         },
