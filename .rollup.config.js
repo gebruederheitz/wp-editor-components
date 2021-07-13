@@ -4,9 +4,11 @@ import resolve from '@rollup/plugin-node-resolve';
 
 export default {
     external: ['wp'],
-    input: 'index.mjs',
+    input: 'index.js',
     output: {
-        file: 'dist/index.mjs',
+        // file: 'dist/index.mjs',
+        dir: 'dist/',
+        preserveModules: true,
         format: 'esm',
         sourcemap: true,
         globals: {
@@ -16,11 +18,17 @@ export default {
     plugins: [
         resolve(),
         babel({
-            babelrc: true,
+            babelrc: false,
             exclude: 'node_modules/**',
             sourceMaps: true,
             inputSourceMap: true,
             babelHelpers: 'bundled',
+            presets: [
+                ["@babel/preset-env"],
+            ],
+            plugins: [
+                "@babel/plugin-transform-react-jsx",
+            ]
         }),
         commonjs(),
     ],
