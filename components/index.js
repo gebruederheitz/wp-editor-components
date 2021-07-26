@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from './fontawesome/FontAwesomeIcon';
 import { FontAwesomePicker } from './fontawesome/FontAwesomePicker';
 import { ImageSelect } from './image-select';
 import { InputWithIcon } from './input-with-icon';
-import { Modal } from './modal';
+import { Modal, ModalOpener, WithModal, ControlledModal } from './modal';
 import { SpinnerOverlay } from './spinner-overlay';
 import { WithBlockInserters } from './with-block-inserters';
 import { WithControlledChildren } from './with-controlled-children';
@@ -22,6 +22,9 @@ export {
     ImageSelect,
     InputWithIcon,
     Modal,
+    ModalOpener,
+    WithModal,
+    ControlledModal,
     SpinnerOverlay,
     WithControlledChildren,
     WithBlockInserters,

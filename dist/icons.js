@@ -388,6 +388,22 @@ var HighlightOff = function HighlightOff(props) {
     d: "M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
   }));
 };
+var Height = function Height(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    enableBackground: "new 0 0 24 24",
+    height: "24px",
+    viewBox: "0 0 24 24",
+    width: "24px",
+    fill: "#000000"
+  }, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+    fill: "none",
+    height: "24",
+    width: "24"
+  })), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("g", null), /*#__PURE__*/React.createElement("polygon", {
+    points: "13,6.99 16,6.99 12,3 8,6.99 11,6.99 11,17.01 8,17.01 12,21 16,17.01 13,17.01"
+  })));
+};
 var KeyboardArrowDown = function KeyboardArrowDown(props) {
   return /*#__PURE__*/React.createElement("svg", _extends({
     xmlns: "http://www.w3.org/2000/svg",
@@ -537,6 +553,20 @@ var MoreHorizontal = function MoreHorizontal(props) {
     d: "M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
   }));
 };
+var PhoneIphone = function PhoneIphone(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    height: "24px",
+    viewBox: "0 0 24 24",
+    width: "24px",
+    fill: "#000000"
+  }, props), /*#__PURE__*/React.createElement("path", {
+    d: "M0 0h24v24H0z",
+    fill: "none"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"
+  }));
+};
 var PhotoResizeSelectLarge = function PhotoResizeSelectLarge(props) {
   return /*#__PURE__*/React.createElement("svg", _extends({
     xmlns: "http://www.w3.org/2000/svg",
@@ -578,6 +608,22 @@ var PresentToAllTwoTone = function PresentToAllTwoTone(props) {
   }), /*#__PURE__*/React.createElement("path", {
     d: "M10 16h4v-4h2l-4-4-4 4h2zM21 3H3c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h18c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 16.02H3V4.98h18v14.04z"
   }));
+};
+var Preview = function Preview(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    enableBackground: "new 0 0 24 24",
+    height: "24px",
+    viewBox: "0 0 24 24",
+    width: "24px",
+    fill: "#000000"
+  }, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+    fill: "none",
+    height: "24",
+    width: "24"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M19,3H5C3.89,3,3,3.9,3,5v14c0,1.1,0.89,2,2,2h14c1.1,0,2-0.9,2-2V5C21,3.9,20.11,3,19,3z M19,19H5V7h14V19z M13.5,13 c0,0.83-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5c0-0.83,0.67-1.5,1.5-1.5S13.5,12.17,13.5,13z M12,9c-2.73,0-5.06,1.66-6,4 c0.94,2.34,3.27,4,6,4s5.06-1.66,6-4C17.06,10.66,14.73,9,12,9z M12,15.5c-1.38,0-2.5-1.12-2.5-2.5c0-1.38,1.12-2.5,2.5-2.5 c1.38,0,2.5,1.12,2.5,2.5C14.5,14.38,13.38,15.5,12,15.5z"
+  })));
 };
 /**
  * An arrow pointing at a paragraph from the left edge
@@ -666,6 +712,43 @@ var SelectAll = function SelectAll(props) {
     d: "M3 5h2V3c-1.1 0-2 .9-2 2zm0 8h2v-2H3v2zm4 8h2v-2H7v2zM3 9h2V7H3v2zm10-6h-2v2h2V3zm6 0v2h2c0-1.1-.9-2-2-2zM5 21v-2H3c0 1.1.9 2 2 2zm-2-4h2v-2H3v2zM9 3H7v2h2V3zm2 18h2v-2h-2v2zm8-8h2v-2h-2v2zm0 8c1.1 0 2-.9 2-2h-2v2zm0-12h2V7h-2v2zm0 8h2v-2h-2v2zm-4 4h2v-2h-2v2zm0-16h2V3h-2v2zM7 17h10V7H7v10zm2-8h6v6H9V9z"
   }));
 };
+var SmartScreen = function SmartScreen(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    enableBackground: "new 0 0 24 24",
+    height: "24px",
+    viewBox: "0 0 24 24",
+    width: "24px",
+    fill: "#000000"
+  }, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+    fill: "none",
+    height: "24",
+    width: "24",
+    y: "0"
+  })), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("path", {
+    d: "M21,5H3C1.9,5,1,5.9,1,7v10c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V7C23,5.9,22.1,5,21,5z M18,17H6V7h12V17z"
+  }), /*#__PURE__*/React.createElement("rect", {
+    height: "1.5",
+    width: "1.5",
+    x: "15",
+    y: "11.25"
+  }), /*#__PURE__*/React.createElement("rect", {
+    height: "1.5",
+    width: "1.5",
+    x: "12.5",
+    y: "11.25"
+  }), /*#__PURE__*/React.createElement("rect", {
+    height: "1.5",
+    width: "1.5",
+    x: "10",
+    y: "11.25"
+  }), /*#__PURE__*/React.createElement("rect", {
+    height: "1.5",
+    width: "1.5",
+    x: "7.5",
+    y: "11.25"
+  }))));
+};
 var Snooze = function Snooze(props) {
   return /*#__PURE__*/React.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -677,6 +760,20 @@ var Snooze = function Snooze(props) {
     fill: "none"
   }, props)), /*#__PURE__*/React.createElement("path", {
     d: "M7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7zm-3-9h3.63L9 15.2V17h6v-2h-3.63L15 10.8V9H9v2z"
+  }));
+};
+var SpaceBar = function SpaceBar(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    height: "24px",
+    viewBox: "0 0 24 24",
+    width: "24px",
+    fill: "#000000"
+  }, props), /*#__PURE__*/React.createElement("path", {
+    d: "M0 0h24v24H0V0z",
+    fill: "none"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M18 9v4H6V9H4v6h16V9z"
   }));
 };
 var Stars = function Stars(props) {
@@ -936,4 +1033,4 @@ var Web = function Web(props) {
   }));
 };
 
-export { Add, Alarm, BorderHorizontal, BorderRight, BorderVertical, Button, CalendarViewDay, CheckCircleOutline, Collections, Crop169, Crop32, CropFree, Delete, DynamicFeed, Equalizer, Filter, Filter1, Filter2, Filter3, Filter4, Filter5, Filter6, Filter7, Filter8, Filter9, FilterNone, HighlightOff, KeyboardArrowDown, KeyboardArrowLeft, KeyboardArrowRight, KeyboardArrowUp, KeyboardTab, Label, Link, LinkOff, Loop, MoreHorizontal, PhotoResizeSelectLarge, PlayCircleOutline, PresentToAllTwoTone, QueuePlayNext, ReadMore, SelectAll, Snooze, Star, StarOutline, Stars, SwapHoriz, SwapVert, TextFields, Theaters, UnfoldMore, VerticalAlignBottom, VerticalAlignCenter, VerticalAlignTop, VerticalSplit, ViewAgenda, ViewCarousel, ViewColumn, ViewCompact, WbIridescent, Web };
+export { Add, Alarm, BorderHorizontal, BorderRight, BorderVertical, Button, CalendarViewDay, CheckCircleOutline, Collections, Crop169, Crop32, CropFree, Delete, DynamicFeed, Equalizer, Filter, Filter1, Filter2, Filter3, Filter4, Filter5, Filter6, Filter7, Filter8, Filter9, FilterNone, Height, HighlightOff, KeyboardArrowDown, KeyboardArrowLeft, KeyboardArrowRight, KeyboardArrowUp, KeyboardTab, Label, Link, LinkOff, Loop, MoreHorizontal, PhoneIphone, PhotoResizeSelectLarge, PlayCircleOutline, PresentToAllTwoTone, Preview, QueuePlayNext, ReadMore, SelectAll, SmartScreen, Snooze, SpaceBar, Star, StarOutline, Stars, SwapHoriz, SwapVert, TextFields, Theaters, UnfoldMore, VerticalAlignBottom, VerticalAlignCenter, VerticalAlignTop, VerticalSplit, ViewAgenda, ViewCarousel, ViewColumn, ViewCompact, WbIridescent, Web };

@@ -1,4 +1,4 @@
-import { components, i18n, element, blockEditor, data as data$1, compose as compose$1, hooks, blocks } from 'wp';
+import { components, i18n, element, blockEditor, compose as compose$2, data as data$1, hooks, blocks } from 'wp';
 import _extends from '@babel/runtime/helpers/extends';
 import _defineProperty$1 from '@babel/runtime/helpers/defineProperty';
 import _objectWithoutProperties from '@babel/runtime/helpers/objectWithoutProperties';
@@ -145,7 +145,7 @@ var BorderVertical = function BorderVertical(props) {
     fill: "none"
   }));
 };
-var Button$4 = function Button(props) {
+var Button$5 = function Button(props) {
   return /*#__PURE__*/React.createElement("svg", _extends({
     viewBox: "0 0 24 24",
     xmlns: "http://www.w3.org/2000/svg"
@@ -459,6 +459,22 @@ var HighlightOff = function HighlightOff(props) {
     d: "M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
   }));
 };
+var Height = function Height(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    enableBackground: "new 0 0 24 24",
+    height: "24px",
+    viewBox: "0 0 24 24",
+    width: "24px",
+    fill: "#000000"
+  }, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+    fill: "none",
+    height: "24",
+    width: "24"
+  })), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("g", null), /*#__PURE__*/React.createElement("polygon", {
+    points: "13,6.99 16,6.99 12,3 8,6.99 11,6.99 11,17.01 8,17.01 12,21 16,17.01 13,17.01"
+  })));
+};
 var KeyboardArrowDown = function KeyboardArrowDown(props) {
   return /*#__PURE__*/React.createElement("svg", _extends({
     xmlns: "http://www.w3.org/2000/svg",
@@ -608,6 +624,20 @@ var MoreHorizontal = function MoreHorizontal(props) {
     d: "M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
   }));
 };
+var PhoneIphone = function PhoneIphone(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    height: "24px",
+    viewBox: "0 0 24 24",
+    width: "24px",
+    fill: "#000000"
+  }, props), /*#__PURE__*/React.createElement("path", {
+    d: "M0 0h24v24H0z",
+    fill: "none"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"
+  }));
+};
 var PhotoResizeSelectLarge = function PhotoResizeSelectLarge(props) {
   return /*#__PURE__*/React.createElement("svg", _extends({
     xmlns: "http://www.w3.org/2000/svg",
@@ -649,6 +679,22 @@ var PresentToAllTwoTone = function PresentToAllTwoTone(props) {
   }), /*#__PURE__*/React.createElement("path", {
     d: "M10 16h4v-4h2l-4-4-4 4h2zM21 3H3c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h18c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 16.02H3V4.98h18v14.04z"
   }));
+};
+var Preview = function Preview(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    enableBackground: "new 0 0 24 24",
+    height: "24px",
+    viewBox: "0 0 24 24",
+    width: "24px",
+    fill: "#000000"
+  }, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+    fill: "none",
+    height: "24",
+    width: "24"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M19,3H5C3.89,3,3,3.9,3,5v14c0,1.1,0.89,2,2,2h14c1.1,0,2-0.9,2-2V5C21,3.9,20.11,3,19,3z M19,19H5V7h14V19z M13.5,13 c0,0.83-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5c0-0.83,0.67-1.5,1.5-1.5S13.5,12.17,13.5,13z M12,9c-2.73,0-5.06,1.66-6,4 c0.94,2.34,3.27,4,6,4s5.06-1.66,6-4C17.06,10.66,14.73,9,12,9z M12,15.5c-1.38,0-2.5-1.12-2.5-2.5c0-1.38,1.12-2.5,2.5-2.5 c1.38,0,2.5,1.12,2.5,2.5C14.5,14.38,13.38,15.5,12,15.5z"
+  })));
 };
 /**
  * An arrow pointing at a paragraph from the left edge
@@ -737,6 +783,43 @@ var SelectAll = function SelectAll(props) {
     d: "M3 5h2V3c-1.1 0-2 .9-2 2zm0 8h2v-2H3v2zm4 8h2v-2H7v2zM3 9h2V7H3v2zm10-6h-2v2h2V3zm6 0v2h2c0-1.1-.9-2-2-2zM5 21v-2H3c0 1.1.9 2 2 2zm-2-4h2v-2H3v2zM9 3H7v2h2V3zm2 18h2v-2h-2v2zm8-8h2v-2h-2v2zm0 8c1.1 0 2-.9 2-2h-2v2zm0-12h2V7h-2v2zm0 8h2v-2h-2v2zm-4 4h2v-2h-2v2zm0-16h2V3h-2v2zM7 17h10V7H7v10zm2-8h6v6H9V9z"
   }));
 };
+var SmartScreen = function SmartScreen(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    enableBackground: "new 0 0 24 24",
+    height: "24px",
+    viewBox: "0 0 24 24",
+    width: "24px",
+    fill: "#000000"
+  }, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+    fill: "none",
+    height: "24",
+    width: "24",
+    y: "0"
+  })), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("path", {
+    d: "M21,5H3C1.9,5,1,5.9,1,7v10c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V7C23,5.9,22.1,5,21,5z M18,17H6V7h12V17z"
+  }), /*#__PURE__*/React.createElement("rect", {
+    height: "1.5",
+    width: "1.5",
+    x: "15",
+    y: "11.25"
+  }), /*#__PURE__*/React.createElement("rect", {
+    height: "1.5",
+    width: "1.5",
+    x: "12.5",
+    y: "11.25"
+  }), /*#__PURE__*/React.createElement("rect", {
+    height: "1.5",
+    width: "1.5",
+    x: "10",
+    y: "11.25"
+  }), /*#__PURE__*/React.createElement("rect", {
+    height: "1.5",
+    width: "1.5",
+    x: "7.5",
+    y: "11.25"
+  }))));
+};
 var Snooze = function Snooze(props) {
   return /*#__PURE__*/React.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -748,6 +831,20 @@ var Snooze = function Snooze(props) {
     fill: "none"
   }, props)), /*#__PURE__*/React.createElement("path", {
     d: "M7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7zm-3-9h3.63L9 15.2V17h6v-2h-3.63L15 10.8V9H9v2z"
+  }));
+};
+var SpaceBar = function SpaceBar(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    height: "24px",
+    viewBox: "0 0 24 24",
+    width: "24px",
+    fill: "#000000"
+  }, props), /*#__PURE__*/React.createElement("path", {
+    d: "M0 0h24v24H0V0z",
+    fill: "none"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M18 9v4H6V9H4v6h16V9z"
   }));
 };
 var Stars = function Stars(props) {
@@ -1014,7 +1111,7 @@ var materialDesignIcons = /*#__PURE__*/Object.freeze({
 	BorderHorizontal: BorderHorizontal,
 	BorderRight: BorderRight,
 	BorderVertical: BorderVertical,
-	Button: Button$4,
+	Button: Button$5,
 	CalendarViewDay: CalendarViewDay,
 	CheckCircleOutline: CheckCircleOutline,
 	Collections: Collections,
@@ -1036,6 +1133,7 @@ var materialDesignIcons = /*#__PURE__*/Object.freeze({
 	Filter9: Filter9,
 	FilterNone: FilterNone,
 	HighlightOff: HighlightOff,
+	Height: Height,
 	KeyboardArrowDown: KeyboardArrowDown,
 	KeyboardArrowLeft: KeyboardArrowLeft,
 	KeyboardArrowRight: KeyboardArrowRight,
@@ -1046,13 +1144,17 @@ var materialDesignIcons = /*#__PURE__*/Object.freeze({
 	LinkOff: LinkOff,
 	Loop: Loop,
 	MoreHorizontal: MoreHorizontal,
+	PhoneIphone: PhoneIphone,
 	PhotoResizeSelectLarge: PhotoResizeSelectLarge,
 	PlayCircleOutline: PlayCircleOutline,
 	PresentToAllTwoTone: PresentToAllTwoTone,
+	Preview: Preview,
 	ReadMore: ReadMore,
 	QueuePlayNext: QueuePlayNext,
 	SelectAll: SelectAll,
+	SmartScreen: SmartScreen,
 	Snooze: Snooze,
+	SpaceBar: SpaceBar,
 	Stars: Stars,
 	Star: Star,
 	StarOutline: StarOutline,
@@ -1073,11 +1175,11 @@ var materialDesignIcons = /*#__PURE__*/Object.freeze({
 	Web: Web
 });
 
-var Button$3 = components.Button;
+var Button$4 = components.Button;
 var AddIconButton$1 = function AddIconButton(_ref) {
   var className = _ref.className,
       onClick = _ref.onClick;
-  return /*#__PURE__*/React.createElement(Button$3, {
+  return /*#__PURE__*/React.createElement(Button$4, {
     className: classnames$1([className, 'components-icon-button']),
     isPrimary: true,
     onClick: onClick
@@ -3708,12 +3810,12 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 }(faCog$1));
 
-var Button$2 = components.Button;
+var Button$3 = components.Button;
 var FocusButton$1 = function FocusButton(_ref) {
   var isSelected = _ref.isSelected,
       _ref$onClick = _ref.onClick,
       onClick = _ref$onClick === void 0 ? function () {} : _ref$onClick;
-  return /*#__PURE__*/React.createElement(Button$2, {
+  return /*#__PURE__*/React.createElement(Button$3, {
     className: classnames$1({
       'ghwp-editor-focus-button': true,
       'is-hidden': isSelected
@@ -10755,7 +10857,7 @@ var CloseButton = function CloseButton(_ref) {
   }));
 };
 
-var Button$1 = components.Button,
+var Button$2 = components.Button,
     TextControl$1 = components.TextControl;
 var __$3 = i18n.__;
 var Controls = function Controls(_ref) {
@@ -10768,7 +10870,7 @@ var Controls = function Controls(_ref) {
     label: __$3('Search by icon name', 'ghwp'),
     value: value,
     onChange: onChange
-  }), /*#__PURE__*/React.createElement(Button$1, {
+  }), /*#__PURE__*/React.createElement(Button$2, {
     className: "ghwp-fontawesome-picker__controls__reset",
     isLarge: true,
     onClick: onClick
@@ -10992,7 +11094,7 @@ var DEFAULT_BUTTON_CHANGE_LABEL = 'Change image';
 
 var _excluded = ["open"],
     _excluded2 = ["open"];
-var Button = components.Button;
+var Button$1 = components.Button;
 var __$2 = i18n.__;
 var SelectButton = function SelectButton(_ref) {
   var open = _ref.open,
@@ -11005,7 +11107,7 @@ var SelectButton = function SelectButton(_ref) {
       buttonLabel = _props$buttonLabel === void 0 ? DEFAULT_BUTTON_LABEL : _props$buttonLabel,
       _props$buttonChangeLa = props.buttonChangeLabel,
       buttonChangeLabel = _props$buttonChangeLa === void 0 ? DEFAULT_BUTTON_CHANGE_LABEL : _props$buttonChangeLa;
-  return /*#__PURE__*/React.createElement(Button, {
+  return /*#__PURE__*/React.createElement(Button$1, {
     isPrimary: true,
     onClick: open
   }, !attributes[idAttribute] ? __$2(buttonLabel, 'ghwp') : __$2(buttonChangeLabel, 'ghwp'));
@@ -11024,7 +11126,7 @@ var SelectButtonWithPreview = function SelectButtonWithPreview(_ref2) {
       buttonChangeLabel = _props$buttonChangeLa2 === void 0 ? DEFAULT_BUTTON_CHANGE_LABEL : _props$buttonChangeLa2,
       _props$urlAttribute = props.urlAttribute,
       urlAttribute = _props$urlAttribute === void 0 ? DEFAULT_URL_ATTRIBUTE_NAME : _props$urlAttribute;
-  return /*#__PURE__*/React.createElement(Button, {
+  return /*#__PURE__*/React.createElement(Button$1, {
     className: classnames$1([{
       'image-button': Boolean(attributes[idAttribute])
     }]),
@@ -11057,7 +11159,7 @@ var RemoveButton = function RemoveButton(props) {
     };
   };
 
-  return /*#__PURE__*/React.createElement(Button, {
+  return /*#__PURE__*/React.createElement(Button$1, {
     isDestructive: true,
     onClick: getOnRemoveImage(idAttribute, urlAttribute, altAttribute)
   }, __$2('Remove image', 'ghwp'));
@@ -14759,18 +14861,70 @@ var InputWithIcon$1 = function InputWithIcon(props) {
   }))));
 };
 
-var Icon = components.Icon;
+var Button = components.Button,
+    Icon = components.Icon,
+    ToolbarButton$1 = components.ToolbarButton;
+var compose$1 = compose$2.compose,
+    withState = compose$2.withState;
 var Modal$1 = function Modal(_ref) {
   var onClose = _ref.onClose,
-      children = _ref.children;
+      children = _ref.children,
+      id = _ref.id;
   return /*#__PURE__*/React.createElement("div", {
-    className: 'ghwp-editor-modal__content'
+    className: 'ghwp-editor-modal__content',
+    "data-ghwp-modal-id": id
   }, /*#__PURE__*/React.createElement("div", {
     className: "ghwp-editor-modal__close",
     onClick: onClose
   }, /*#__PURE__*/React.createElement(Icon, {
     icon: "no"
   })), children);
+};
+var ControlledModal$1 = function ControlledModal(props) {
+  var _props$id = props.id,
+      id = _props$id === void 0 ? '' : _props$id,
+      children = props.children,
+      setState = props.setState;
+  var isVisible = props["modalVisible".concat(id)];
+  return /*#__PURE__*/React.createElement(React.Fragment, null, isVisible && /*#__PURE__*/React.createElement(Modal$1, {
+    id: id,
+    onClose: function onClose() {
+      setState(_defineProperty$1({}, "modalVisible".concat(id), false));
+    }
+  }, children));
+};
+var WithModal$1 = function WithModal(Component) {
+  var ids = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [''];
+  var defaultState = {};
+  ids.forEach(function (id) {
+    defaultState["modalVisible".concat(id)] = false;
+  });
+  return compose$1([withState(defaultState)])(Component);
+};
+var ModalOpener$1 = function ModalOpener(props) {
+  var _props$id2 = props.id,
+      id = _props$id2 === void 0 ? '' : _props$id2,
+      children = props.children,
+      setState = props.setState,
+      _props$toolbar = props.toolbar,
+      toolbar = _props$toolbar === void 0 ? false : _props$toolbar,
+      _props$icon = props.icon,
+      icon = _props$icon === void 0 ? null : _props$icon;
+
+  function onClick() {
+    setState(_defineProperty$1({}, "modalVisible".concat(id), true));
+  }
+
+  return /*#__PURE__*/React.createElement(React.Fragment, null, toolbar ? /*#__PURE__*/React.createElement(ToolbarButton$1, {
+    onClick: onClick
+  }, icon ? /*#__PURE__*/React.createElement(Icon, {
+    icon: icon
+  }) : {
+    children: children
+  }) : /*#__PURE__*/React.createElement(Button, {
+    isPrimary: true,
+    onClick: onClick
+  }, children));
 };
 
 var Spinner = components.Spinner;
@@ -14981,7 +15135,7 @@ var dedupe = {exports: {}};
 
 var classnames = dedupe.exports;
 
-var compose = compose$1.compose;
+var compose = compose$2.compose;
 var withDispatch = data$1.withDispatch,
     withSelect$1 = data$1.withSelect;
 var INACTIVE_CHILD_CLASS = 'ghwp-inactive-child';
@@ -16931,6 +17085,9 @@ var index = /*#__PURE__*/Object.freeze({
 	ImageSelect: ImageSelect$1,
 	InputWithIcon: InputWithIcon$1,
 	Modal: Modal$1,
+	ModalOpener: ModalOpener$1,
+	WithModal: WithModal$1,
+	ControlledModal: ControlledModal$1,
 	SpinnerOverlay: SpinnerOverlay$1,
 	WithControlledChildren: WithControlledChildren$1,
 	WithBlockInserters: WithBlockInserters$1,
@@ -16946,6 +17103,9 @@ var AddIconButton = AddIconButton$1,
     ImageSelect = ImageSelect$1,
     InputWithIcon = InputWithIcon$1,
     Modal = Modal$1,
+    ModalOpener = ModalOpener$1,
+    WithModal = WithModal$1,
+    ControlledModal = ControlledModal$1,
     SpinnerOverlay = SpinnerOverlay$1,
     WithBlockInserters = WithBlockInserters$1,
     WithControlledChildren = WithControlledChildren$1,
@@ -16958,4 +17118,4 @@ var getCurrentVisibleChild = getCurrentVisibleChild$1,
     truncateString = truncateString$1,
     videoProviderUtils = index$2;
 
-export { AddIconButton, ApiSearch, DiscreetInput, FocusButton, FontAwesomeIcon, FontAwesomePicker, ImageSelect, InputWithIcon, Modal, SpinnerOverlay, WithBlockInserters, WithControlledChildren, WithFocusWithin, index as components, getCurrentVisibleChild, getIconToggles, hasSelectedInnerBlock, materialDesignIcons as icons, lazyLoadImages, registerAdditionalStyles, truncateString, index$1 as utils, videoProviderUtils };
+export { AddIconButton, ApiSearch, ControlledModal, DiscreetInput, FocusButton, FontAwesomeIcon, FontAwesomePicker, ImageSelect, InputWithIcon, Modal, ModalOpener, SpinnerOverlay, WithBlockInserters, WithControlledChildren, WithFocusWithin, WithModal, index as components, getCurrentVisibleChild, getIconToggles, hasSelectedInnerBlock, materialDesignIcons as icons, lazyLoadImages, registerAdditionalStyles, truncateString, index$1 as utils, videoProviderUtils };

@@ -379,6 +379,26 @@ export const HighlightOff = (props) => (
     </svg>
 );
 
+export const Height = (props) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        enableBackground="new 0 0 24 24"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="#000000"
+        {...props}
+    >
+        <g>
+            <rect fill="none" height="24" width="24" />
+        </g>
+        <g>
+            <g />
+            <polygon points="13,6.99 16,6.99 12,3 8,6.99 11,6.99 11,17.01 8,17.01 12,21 16,17.01 13,17.01" />
+        </g>
+    </svg>
+);
+
 export const KeyboardArrowDown = (props) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -524,6 +544,20 @@ export const MoreHorizontal = (props) => (
     </svg>
 );
 
+export const PhoneIphone = (props) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="#000000"
+        {...props}
+    >
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z" />
+    </svg>
+);
+
 export const PhotoResizeSelectLarge = (props) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -563,6 +597,23 @@ export const PresentToAllTwoTone = (props) => (
             opacity=".3"
         />
         <path d="M10 16h4v-4h2l-4-4-4 4h2zM21 3H3c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h18c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 16.02H3V4.98h18v14.04z" />
+    </svg>
+);
+
+export const Preview = (props) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        enableBackground="new 0 0 24 24"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="#000000"
+        {...props}
+    >
+        <g>
+            <rect fill="none" height="24" width="24" />
+            <path d="M19,3H5C3.89,3,3,3.9,3,5v14c0,1.1,0.89,2,2,2h14c1.1,0,2-0.9,2-2V5C21,3.9,20.11,3,19,3z M19,19H5V7h14V19z M13.5,13 c0,0.83-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5c0-0.83,0.67-1.5,1.5-1.5S13.5,12.17,13.5,13z M12,9c-2.73,0-5.06,1.66-6,4 c0.94,2.34,3.27,4,6,4s5.06-1.66,6-4C17.06,10.66,14.73,9,12,9z M12,15.5c-1.38,0-2.5-1.12-2.5-2.5c0-1.38,1.12-2.5,2.5-2.5 c1.38,0,2.5,1.12,2.5,2.5C14.5,14.38,13.38,15.5,12,15.5z" />
+        </g>
     </svg>
 );
 
@@ -645,6 +696,31 @@ export const SelectAll = (props) => (
     </svg>
 );
 
+export const SmartScreen = (props) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        enableBackground="new 0 0 24 24"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="#000000"
+        {...props}
+    >
+        <g>
+            <rect fill="none" height="24" width="24" y="0" />
+        </g>
+        <g>
+            <g>
+                <path d="M21,5H3C1.9,5,1,5.9,1,7v10c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V7C23,5.9,22.1,5,21,5z M18,17H6V7h12V17z" />
+                <rect height="1.5" width="1.5" x="15" y="11.25" />
+                <rect height="1.5" width="1.5" x="12.5" y="11.25" />
+                <rect height="1.5" width="1.5" x="10" y="11.25" />
+                <rect height="1.5" width="1.5" x="7.5" y="11.25" />
+            </g>
+        </g>
+    </svg>
+);
+
 export const Snooze = (props) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -654,6 +730,20 @@ export const Snooze = (props) => (
     >
         <path d="M0 0h24v24H0z" fill="none" {...props} />
         <path d="M7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7zm-3-9h3.63L9 15.2V17h6v-2h-3.63L15 10.8V9H9v2z" />
+    </svg>
+);
+
+export const SpaceBar = (props) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="#000000"
+        {...props}
+    >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path d="M18 9v4H6V9H4v6h16V9z" />
     </svg>
 );
 
