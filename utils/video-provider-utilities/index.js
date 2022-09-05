@@ -24,7 +24,7 @@ const isShortYoutubeUrl = (videoUrl) => videoUrl.match(YT_SHORT_REGEX);
 const isEmbedYoutubeUrl = (videoUrl) => videoUrl.match(YT_EMBED_REGEX);
 const isDefaultVimeoUrl = (videoUrl) => videoUrl.match(VIMEO_REGEX);
 const isEmbedVimeoUrl = (videoUrl) => videoUrl.match(VIMEO_EMBED_REGEX);
-const isIframeString = (videoUrl) => videoUrl.match(IFRAME_REGEX);
+export const isIframeString = (videoUrl) => videoUrl.match(IFRAME_REGEX);
 
 /*
  ******************************************************************************
