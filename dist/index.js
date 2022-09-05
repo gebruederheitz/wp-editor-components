@@ -16927,7 +16927,6 @@ var isIframeString = function isIframeString(videoUrl) {
  *   Test URLs                                                                *
  ******************************************************************************/
 
-
 var isYoutubeUrl = function isYoutubeUrl(videoUrl) {
   return !!(isLongYoutubeUrl(videoUrl) || isShortYoutubeUrl(videoUrl) || isEmbedYoutubeUrl(videoUrl));
 };
@@ -17007,7 +17006,7 @@ var getYoutubeThumbnailUrlByVideoId = function getYoutubeThumbnailUrlByVideoId(v
     id: 'videoThumbGetterSuccess',
     isDismissible: true
   });
-  return "https://img.youtube.com/vi/".concat(videoId, "/hqdefault.jpg");
+  return "https://img.youtube.com/vi/".concat(videoId, "/maxresdefault.jpg");
 };
 /**
  * @param {string} videoId
@@ -17042,6 +17041,7 @@ var index$2 = /*#__PURE__*/Object.freeze({
 	__proto__: null,
 	getYoutubeEmbedUrlFromVideoId: getYoutubeEmbedUrlFromVideoId,
 	getVimeoEmbedUrlFromVideoId: getVimeoEmbedUrlFromVideoId,
+	isIframeString: isIframeString,
 	isYoutubeUrl: isYoutubeUrl,
 	isVimeoUrl: isVimeoUrl,
 	getYoutubeVideoIdFromUrl: getYoutubeVideoIdFromUrl,
