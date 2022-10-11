@@ -16888,6 +16888,7 @@ var YT_LONG_REGEX = /https?:\/\/(?:www\.)?youtube\.com\/watch\?(?:[^\s&?]*)*(?:&
 var YT_SHORT_REGEX = /https?:\/\/youtu\.be\/([^\s&?]*)/; // prettier-ignore
 
 var YT_EMBED_REGEX = /https?:\/\/(?:www\.)?youtube\.com\/embed\/(?:([^&?\s]*))(?:&[^\s&?]*)*/;
+var YT_NOCOOKIE_REGEX = /https?:\/\/(?:www\.)?youtube-nocookie.com\/embed\/(?:([^&?\s]*))(?:&[^\s&?]*)*/;
 var VIMEO_REGEX = /https?:\/\/(?:www\.)?vimeo\.com\/(\d*)(?:(?:&|\?|\/)?.*)*/; // prettier-ignore
 
 var VIMEO_EMBED_REGEX = /https?:\/\/(?:www\.)?player\.vimeo\.com\/video\/(?:([^&?\s]*))(?:&[^\s&?]*)*/;
@@ -16919,6 +16920,9 @@ var isEmbedVimeoUrl = function isEmbedVimeoUrl(videoUrl) {
   return videoUrl.match(VIMEO_EMBED_REGEX);
 };
 
+var isNocookieYoutubeUrl = function isNocookieYoutubeUrl(videoUrl) {
+  return videoUrl.match(YT_NOCOOKIE_REGEX);
+};
 var isIframeString = function isIframeString(videoUrl) {
   return videoUrl.match(IFRAME_REGEX);
 };
@@ -16928,7 +16932,7 @@ var isIframeString = function isIframeString(videoUrl) {
  ******************************************************************************/
 
 var isYoutubeUrl = function isYoutubeUrl(videoUrl) {
-  return !!(isLongYoutubeUrl(videoUrl) || isShortYoutubeUrl(videoUrl) || isEmbedYoutubeUrl(videoUrl));
+  return !!(isLongYoutubeUrl(videoUrl) || isShortYoutubeUrl(videoUrl) || isEmbedYoutubeUrl(videoUrl) || isNocookieYoutubeUrl(videoUrl));
 };
 var isVimeoUrl = function isVimeoUrl(videoUrl) {
   return !!(isDefaultVimeoUrl(videoUrl) || isEmbedVimeoUrl(videoUrl));
@@ -16942,6 +16946,7 @@ var getYoutubeVideoIdFromUrl = function getYoutubeVideoIdFromUrl(videoUrl) {
   var isYT = isLongYoutubeUrl(videoUrl);
   var isShortYT = isShortYoutubeUrl(videoUrl);
   var isEmbedYT = isEmbedYoutubeUrl(videoUrl);
+  var isNocookieYT = isNocookieYoutubeUrl(videoUrl);
 
   if (isYT && isYT[1]) {
     return isYT[1];
@@ -16949,6 +16954,8 @@ var getYoutubeVideoIdFromUrl = function getYoutubeVideoIdFromUrl(videoUrl) {
     return isShortYT[1];
   } else if (isEmbedYT && isEmbedYT[1]) {
     return isEmbedYT[1];
+  } else if (isNocookieYT && isNocookieYT[1]) {
+    return isNocookieYT[1];
   } else {
     return null;
   }
@@ -17041,6 +17048,7 @@ var index$2 = /*#__PURE__*/Object.freeze({
 	__proto__: null,
 	getYoutubeEmbedUrlFromVideoId: getYoutubeEmbedUrlFromVideoId,
 	getVimeoEmbedUrlFromVideoId: getVimeoEmbedUrlFromVideoId,
+	isNocookieYoutubeUrl: isNocookieYoutubeUrl,
 	isIframeString: isIframeString,
 	isYoutubeUrl: isYoutubeUrl,
 	isVimeoUrl: isVimeoUrl,
