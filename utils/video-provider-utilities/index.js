@@ -6,6 +6,8 @@ const YT_LONG_REGEX = /https?:\/\/(?:www\.)?youtube\.com\/watch\?(?:[^\s&?]*)*(?
 const YT_SHORT_REGEX = /https?:\/\/youtu\.be\/([^\s&?]*)/;
 // prettier-ignore
 const YT_EMBED_REGEX = /https?:\/\/(?:www\.)?youtube\.com\/embed\/(?:([^&?\s]*))(?:&[^\s&?]*)*/;
+const YT_NOCOOKIE_REGEX =
+    /https?:\/\/(?:www\.)?youtube-nocookie.com\/embed\/(?:([^&?\s]*))(?:&[^\s&?]*)*/;
 const VIMEO_REGEX = /https?:\/\/(?:www\.)?vimeo\.com\/(\d*)(?:(?:&|\?|\/)?.*)*/;
 // prettier-ignore
 const VIMEO_EMBED_REGEX = /https?:\/\/(?:www\.)?player\.vimeo\.com\/video\/(?:([^&?\s]*))(?:&[^\s&?]*)*/;
@@ -24,6 +26,8 @@ const isShortYoutubeUrl = (videoUrl) => videoUrl.match(YT_SHORT_REGEX);
 const isEmbedYoutubeUrl = (videoUrl) => videoUrl.match(YT_EMBED_REGEX);
 const isDefaultVimeoUrl = (videoUrl) => videoUrl.match(VIMEO_REGEX);
 const isEmbedVimeoUrl = (videoUrl) => videoUrl.match(VIMEO_EMBED_REGEX);
+export const isNocookieYoutubeUrl = (videoUrl) =>
+    videoUrl.match(YT_NOCOOKIE_REGEX);
 export const isIframeString = (videoUrl) => videoUrl.match(IFRAME_REGEX);
 
 /*
@@ -35,7 +39,8 @@ export const isYoutubeUrl = (videoUrl) => {
     return !!(
         isLongYoutubeUrl(videoUrl) ||
         isShortYoutubeUrl(videoUrl) ||
-        isEmbedYoutubeUrl(videoUrl)
+        isEmbedYoutubeUrl(videoUrl) ||
+        isNocookieYoutubeUrl(videoUrl)
     );
 };
 
@@ -52,12 +57,15 @@ export const getYoutubeVideoIdFromUrl = (videoUrl) => {
     const isYT = isLongYoutubeUrl(videoUrl);
     const isShortYT = isShortYoutubeUrl(videoUrl);
     const isEmbedYT = isEmbedYoutubeUrl(videoUrl);
+    const isNocookieYT = isNocookieYoutubeUrl(videoUrl);
     if (isYT && isYT[1]) {
         return isYT[1];
     } else if (isShortYT && isShortYT[1]) {
         return isShortYT[1];
     } else if (isEmbedYT && isEmbedYT[1]) {
         return isEmbedYT[1];
+    } else if (isNocookieYT && isNocookieYT[1]) {
+        return isNocookieYT[1];
     } else {
         return null;
     }
